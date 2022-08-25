@@ -86,7 +86,7 @@
 
 #header #nav .menu .ham,
 #header #nav .menu .hidden {
-    display: none;
+    display: block;
 }
 
 #header #nav .menu .depth1 .depth2 {
