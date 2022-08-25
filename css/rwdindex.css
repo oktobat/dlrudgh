@@ -104,7 +104,7 @@
 
 #header #nav .menu .ham,
 #header #nav .menu .hidden {
-    display: none;
+    display: block;
 }
 
 #header .membership {
