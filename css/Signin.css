@@ -1,0 +1,597 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Jua&display=swap');
+
+/* 
+    font-family: 'Prompt', sans-serif;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Jua', sans-serif;
+*/
+
+.cf {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+* {
+    word-break: keep-all;
+}
+
+#header {
+    /* padding: 40px 0; */
+    height: 80px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    background: #acb2f738;
+    z-index: 9999;
+}
+
+#header #nav {
+    max-width: 100%;
+}
+
+
+#header #nav h1 {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translatey(-50%);
+    overflow: hidden;
+}
+
+#header #nav h1 img {
+    width: 100%;
+}
+
+#header #nav .menu {
+    width: 60%;
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 18%;
+}
+
+#header #nav .menu .depth1 >li{
+    float: left;
+    width: 15%;
+    font-size: 25px;
+    /* font-weight: bold; */
+    padding: 0 30px;
+}
+
+#header #nav .menu .depth1 >li>a{
+    font-family: 'Jua', sans-serif;
+}
+
+#header #nav .menu .depth1 .depth2 h2 {
+    /* font-weight: bold; */
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Jua', sans-serif;
+}
+
+#header #nav .menu .depth2 li {
+    font-size: 14px;
+}
+
+#header #nav .menu .depth2 p {
+    font-weight: normal;
+}
+
+
+#header #nav .menu .depth1 .depth2 {
+    width: 200px;
+    margin-top: 0px;
+    font-weight: normal;
+    border-radius: 10px;
+    /* background-color: #ddd; */
+    background-color: #f1cbff;
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-55px);
+    padding: 10px;
+}
+
+#header #nav .menu .depth1 >li:hover >.depth2 {
+    display: block;
+    /* transform: translateX(-40px); */
+    /* opacity: 1; */
+}
+
+
+#header #nav .menu .depth1 .depth3 {
+    padding: 0 10px;
+}
+
+
+#header .membership {
+    position: absolute;
+    top: 60%; right: 20px;
+}
+
+.spimg {
+    background: url(../images/spimg.png) no-repeat;
+    background-size: auto;
+}
+
+#header .membership a:first-child button+label {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -24px;
+    right: 23px;
+    background-position: -85px -65px;
+}
+
+#header .membership button {
+    display: inline-block;
+    font-family: 'Jua', sans-serif;
+    padding: 0 10px;
+    border: none;
+    font-size: 20px;
+}
+
+#header .membership a:nth-child(2) button+label {
+    width: 25px; height: 25px;
+    position: absolute;
+    top: -25px; right: 34px;
+    background-position: -22px -71px;
+}
+
+
+/* section */
+#section {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+#section #ballpointpenbg {
+    width: 17%;
+    height: 50%;
+    background: url(../images/ballpointpen.jpg) no-repeat;
+    background-size: auto;
+    background-position: -170px 100px;
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+}
+
+#section #signbox {
+    max-width: 700px;
+    height: 890px;
+    box-shadow: 2px 2px 2px #999;
+    margin: 0 auto 100px;
+    padding: 100px 75px 55px 100px;
+    background: url(../images/signinbg.jpg) no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #0000003d;
+    
+}
+
+#section #signbox h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 80px;
+    letter-spacing: 0.3em;
+    padding-bottom: 20px;
+}
+
+#section #signbox .personalinfo {
+    padding: 15px 0;
+}
+
+#section #signbox .personalinfo .birth,
+#section #signbox .personalinfo .email,
+#section #signbox .personalinfo .box {
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #0000003d;
+    box-shadow: 0px 1px 3px #999;
+    margin: 0 0 2px;
+    
+}
+
+#section #signbox .personalinfo .name input{
+    width: 40%;
+}
+
+#section #signbox .personalinfo p {
+    width: 100%;
+    height: 53px;
+    /* margin: 5px 0; */
+    line-height: 1.5;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(9px);
+    /* background: red;*/
+}
+
+#section #signbox .personalinfo p span {
+    float: left;
+    width: 26%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#section #signbox .personalinfo .box {
+    /* margin: 3px 0; */
+    display: block;
+    width: 72%;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#section #signbox .personalinfo #id {
+    position: relative;
+}
+
+
+#section #signbox .personalinfo #id .id {
+    width: 52%;
+}
+
+#section #signbox .personalinfo #id .id +.idbtn {
+    background-color: #739d9d;
+    color: yellow;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border-radius: 10px;
+}
+
+#section #signbox .personalinfo .box:focus {
+    background-color: antiquewhite;
+    /* border: none; */
+}
+
+
+#signbox .personalinfo .birth {
+    /* margin-right: 10px; */
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#signbox .personalinfo .birth:nth-child(2) {
+    width: 27%;
+}
+#signbox .personalinfo .birth:nth-child(3) {
+    width: 21%;
+}
+#signbox .personalinfo .birth:nth-child(4) {
+    width: 21%;
+    margin-right: 0;
+}
+
+#signbox .personalinfo p:nth-child(6) {
+    position: relative;
+}
+
+#signbox .personalinfo .email {
+    /* margin: 3px 0; */
+    height: 40px;
+    display: block;
+    width: 72% !important;
+    border-radius: 10px;
+}
+
+#signbox .personalinfo .email:nth-child(2) {
+    width: 32% !important;
+    float: left;
+}
+#signbox .personalinfo .email:nth-child(3) {
+    width: 34% !important;
+    float: right;
+    transform: translatex(-13px);
+}
+
+.spimg {
+    background: url(../images/spimg.png) no-repeat;
+    background-size: 830%;
+}
+
+#signbox .personalinfo .cb {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 14px;
+    left: 144px;
+    display: none;
+    background-color: red;
+}
+
+#signbox .agree {
+    position: relative;
+}
+
+#signbox .agree .emailcomment {
+    font-size: 13px !important;
+    width: 240px !important;
+    color: red;
+    position: absolute;
+    top: 2px;
+    left: 180px;
+    opacity: 0;
+}
+
+#signbox .agree .snscomment {
+    font-size: 13px !important;
+    width: 240px !important;
+    color: red;
+    position: absolute;
+    top: 2px;
+    left: 180px;
+    opacity: 0;
+}
+
+#signbox .personalinfo .agree .ecb:checked ~label {
+    opacity: 1;
+}
+#signbox .personalinfo .agree .scb:checked ~label {
+    opacity: 1;
+}
+
+#signbox .personalinfo .agree #emailagree:checked +label {
+    background-position: -84px -45px;
+    /* background-color: red; */
+}
+#signbox .personalinfo .agree #snsagree:checked +label {
+    background-position: -84px -45px;
+    /* background-color: red; */
+}
+
+#signbox .personalinfo #emailagree +label{
+    /* background-color: red; */
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    background-position: -84px -5px;
+    top: 5px;
+    left: 135px;
+}
+#signbox .personalinfo #snsagree +label{
+    /* background-color: red; */
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    background-position: -84px -5px;
+    top: 5px;
+    left: 135px;
+}
+
+#signbox .personalinfo .agree #snsagree:checked +label {
+    background-position: -84px -45px;
+    /* background-color: red; */
+}
+
+
+#signbox .personalinfo #snsagree +label{
+    /* background-color: red; */
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    background-position: -84px -5px;
+    top: 5px;
+    left: 135px;
+}
+
+#signbox .personalinfo .psbtn {
+    text-align: center;
+    margin: 32px 0;
+}
+
+#signbox .personalinfo .psbtn button {
+    border-radius: 10px;
+    /* border: none; */
+    margin: 0 10px;
+    box-shadow: 2px 2px 4px #cfb48a;
+}
+
+#signbox .personalinfo .psbtn button span {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+
+#signbox .personalinfo .psbtn button:nth-child(1) {
+    width: 40%;
+    height: 50px;
+    background: #fff url(../images/btnbg.jpg) no-repeat;
+    background-size: 40px;
+    background-position: 10px;
+}
+#signbox .personalinfo .psbtn button:nth-child(2) {
+    width: 30%;
+    height: 50px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------
+#section .art1 ul li img {
+    opacity: 0.1;
+}
+
+
+
+#section .art1 ul li:nth-child(1) {
+    
+    animation: photoslide 1.5s 60s ;
+
+   animation-fill-mode: alternate; 
+    
+}
+#section .art1 ul li:nth-child(2) {
+    animation: photoslide 1.5s 50s ;
+    animation-delay: 5s;
+}
+#section .art1 ul li:nth-child(3) {
+    animation: photoslide 1.5s 40s ;
+    animation-delay: 10s;
+}
+#section .art1 ul li:nth-child(4) {
+    animation: photoslide 1.5s 30s ;
+    animation-delay: 10s;
+
+}
+#section .art1 ul li:nth-child(5) {
+    animation: photoslide 1.5s 20s ;
+    animation-delay: 15s;
+
+}
+#section .art1 ul li:nth-child(6) {
+    animation: photoslide 1.5s 10s ;
+    animation-delay: 20s;
+
+}
+#section .art1 ul li:nth-child(7) {
+    animation: photoslide 1.5s  ;
+    animation-delay: 25s;
+
+} */
+
+/* footer */
+#footer {
+    position: relative;
+}
+
+#footerbx {
+    /* margin-top: 150px; */
+    position: relative;
+    /* overflow: hidden; */
+    /* height: 290px; */
+    padding: 80px 0;
+    background-color: #cfb48aa8;
+}
+
+#emptybx {
+    width: 23%;
+    height: 80px;
+    background-color: #cfb48aa8;
+    /* background-color: yellow; */
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 20px 0
+}
+
+#footer #sidebx {
+    content: '';
+    width: 5%;
+    /* height: 250px; */
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+}
+
+#footer #footerbx .step1 {
+    margin: 0 auto;
+    width: 100%;
+    /* position: relative; */
+    text-align: center;
+}
+
+#footer .step1 .ftlogo {
+    width: 31%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    
+}
+
+#footer .step1 .ftlogo img {
+    padding: 10px 10px;
+    border: 1px solid red;
+}
+
+#footer .sns {
+    /* float: left; */
+    width: 40%;
+    display: inline;
+    /* padding: 5px 0 0 90px; */
+}
+
+#footer .sns a {
+    padding: 0 6%;
+    font-size: 35px;
+}
+
+#footer .policy {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+
+#footer .policy ul {
+    /* display: block;     */
+    text-align: center;
+    /* transform: translateY(245px); */
+}
+
+#footer .policy ul li {
+    display: inline;
+    font-size: 20px;
+    padding: 15px 10px;
+
+}
+
+#footer .step2 {
+        width: 26%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2%;
+        font-size: 18px;
+        font-weight: bold;
+        background: white;
+}
+
+#footer .copyright {
+    border: 1px solid blue;
+    /* height: 140px; */
+    margin: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#footer .step2 .copyright p {
+    margin: 10px 0;
+}
+
+
+@keyframes photoslide{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+
+}
+
